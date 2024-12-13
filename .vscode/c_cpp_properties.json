@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/bin/ep/include"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/intel/oneapi/compiler/2025.0/bin/icpx",
+            "cStandard": "c17",
+            "intelliSenseMode": "${default}",
+            "cppStandard": "c++11",
+            "compilerArgs": [
+                "-xcore-avx2 -m8 "
+            ]
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "cstdlib": "cpp",
+        "map": "cpp",
+        "complex": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+        "fstream": "cpp",
+        "climits": "cpp",
+        "cfloat": "cpp"
+    },
+    "editor.fontFamily": "'Noto Sans Mono', 'monospace', monospace",
+    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/SLIDE/"
+    ]
+}
