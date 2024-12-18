@@ -1,8 +1,8 @@
 import numpy as np
 
 class config:
-    data_path_train = '../dataset/Amazon/amazon_train.txt'
-    data_path_test = '../dataset/Amazon/amazon_test.txt'
+    data_path_train = '../dataset/Amazon670K.bow/amazon_train.txt'
+    data_path_test = '../dataset/Amazon670K.bow/amazon_test.txt'
     GPUs = '0' # empty string uses only CPU
     num_threads = 44 # Only used when GPUs is empty string
     lr = 0.0001

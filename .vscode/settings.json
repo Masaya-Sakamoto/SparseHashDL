@@ -7,7 +7,10 @@
         "string": "cpp",
         "fstream": "cpp",
         "climits": "cpp",
-        "cfloat": "cpp"
+        "cfloat": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "cstring": "cpp"
     },
     "editor.fontFamily": "'Noto Sans Mono', 'monospace', monospace",
     "C_Cpp.default.cppStandard": "c++11",

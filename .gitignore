@@ -21,3 +21,4 @@ mnist.scale
 bin/*
 bin_linux/*
 build/*
+dataset/*

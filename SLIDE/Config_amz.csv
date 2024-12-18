@@ -17,10 +17,10 @@ Stepsize=1000
 sizesOfLayers=128,670091
 numLayer=2
 
-trainData=../dataset/Amazon/amazon_train.txt
-testData=../dataset/Amazon/amazon_test.txt
+trainData=../dataset/Amazon670K.bow/amazon_train.txt
+testData=../dataset/Amazon670K.bow/amazon_test.txt
 
 weight=../savedWeight.npz
-savedweight=../savedWeight.npz
+savedweight=""
 
 logFile=../dataset/log.txt
