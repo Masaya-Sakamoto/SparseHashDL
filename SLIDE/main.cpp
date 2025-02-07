@@ -50,12 +50,32 @@ int globalTime = 0;
 #define snd second
 
 
+/**
+ * Swaps the byte order (endianess) of a 32-bit unsigned integer.
+ *
+ * This function takes a reference to an unsigned int and swaps its bytes,
+ * transforming it from big-endian to little-endian or vice versa. The swapped
+ * value is then stored back in the original variable.
+ *
+ * @param x Reference to the 32-bit unsigned integer whose byte order will be swapped.
+ */
 void endianSwap(unsigned int &x) {
     x = (x>>24)|((x<<8)&0x00FF0000)|((x>>8)&0x0000FF00)|(x<<24);
 }
 typedef vector<unsigned int> Image;
 
 
+/**
+ * Trims leading and trailing whitespace from a string.
+ *
+ * This function removes any leading and trailing whitespace from
+ * the input string str by finding the first and last non-space characters
+ * and then returning the substring that lies between them.
+ * If the input string contains only whitespace, it returns an empty string.
+ * 
+ * @param str The string to trim.
+ * @return A new string with all leading and trailing whitespace removed.
+ */
 string trim(string& str)
 {
     size_t first = str.find_first_not_of(' ');
@@ -64,6 +84,19 @@ string trim(string& str)
 }
 
 
+/**
+ * Parses a configuration file and sets various parameters based on the key-value pairs.
+ *
+ * This function reads a configuration file line by line, ignoring empty lines,
+ * comments (lines starting with '#'), and lines that are too short to be meaningful.
+ * It then extracts key-value pairs and assigns them to class member variables
+ * such as RangePow, K, L, Sparsity, Batchsize, Rehash, Rebuild, InputDim, totRecords,
+ * totRecordsTest, Epoch, Lr, Stepsize, numLayer, logFile, sizesOfLayers, trainData,
+ * testData, Weights, and savedWeights. If an unknown key is encountered, it outputs
+ * an error message.
+ *
+ * @param filename The name of the configuration file to parse.
+ */
 void parseconfig(string filename)
 {
     std::ifstream file(filename);

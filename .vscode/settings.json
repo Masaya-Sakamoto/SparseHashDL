@@ -10,7 +10,8 @@
         "cfloat": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "bitset": "cpp"
     },
     "editor.fontFamily": "'Noto Sans Mono', 'monospace', monospace",
     "C_Cpp.default.cppStandard": "c++11",
